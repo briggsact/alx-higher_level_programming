@@ -1,14 +1,11 @@
 #!/usr/bin/python3
+def divisible_by_2(my_list=[]):
+    check_div = []
 
-
-def max_integer(my_list=[]):
-    """Find the biggest integer of a list."""
-    if len(my_list) == 0:
-        return (None)
-
-    big = my_list[0]
     for i in range(len(my_list)):
-        if my_list[i] > big:
-            big = my_list[i]
+        if my_list[i] % 2 == 0:
+            check_div.append(True)
+        else:
+            check_div.append(False)
 
-    return (big)
+    return (check_div)
